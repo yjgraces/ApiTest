@@ -1,0 +1,74 @@
+#模块名
+packageName: ListenCarSetType
+
+#测试接口任务列表
+taskList:
+-   id: 1
+    #测试方法名
+    testName: testGetListenCarTypes
+    #服务uri，注意带/
+    uri:   /V6/Driver/GetListenCarTypes
+    methodType: get
+    #如果需要设置header，就写，不需要可以去掉
+    headers:
+      Authorization: OAuth oauth_consumer_key="2afdd89f5c6dbdc34542ab04933a091004eba18e2",oauth_signature_method="PLAINTEXT",x_auth_mode="client_auth",oauth_version="1.0",oauth_signature="5sARLGoVkNAPhh5wq1Hl95crWIk"
+
+    #请求参数：
+    params:
+      imei: 353222063475100
+      version: 259
+      x_auth_mode: client_auth
+      is_gzip: true
+      device_type: 1
+      os_name: samsung-SM-G900F
+      os_version: 6.0.1
+      city: 北京市
+      channel_source:
+
+
+-   id: 2
+    #测试方法名
+    testName: testUpdateListenCarTypes
+    #服务uri，注意带/
+    uri:   /V6/Driver/UpdateListenCarTypes
+    methodType: post
+    #如果需要设置header，就写，不需要可以去掉
+    headers:
+      Authorization: OAuth oauth_consumer_key="2afdd89f5c6dbdc34542ab04933a091004eba18e2",oauth_signature_method="PLAINTEXT",x_auth_mode="client_auth",oauth_version="1.0",oauth_signature="5sARLGoVkNAPhh5wq1Hl95crWIk"
+
+    #请求参数：
+    params:
+      car_type_id: 4,2,5
+      imei: 353222063475100
+      version: 259
+      x_auth_mode: client_auth
+      is_gzip: true
+      device_type: 1
+      os_name: samsung-SM-G900F
+      os_version: 6.0.1
+      city: 北京市
+      channel_source:
+
+
+-   id: 3
+    #测试方法名
+    testName: testSetLimited
+    #服务uri，注意带/
+    uri:  /v4/Driver/SetLimited
+    methodType: post
+    #如果需要设置header，就写，不需要可以去掉
+    headers:
+      Authorization: OAuth oauth_consumer_key="2afdd89f5c6dbdc34542ab04933a091004eba18e2",oauth_signature_method="PLAINTEXT",x_auth_mode="client_auth",oauth_version="1.0",oauth_signature="5sARLGoVkNAPhh5wq1Hl95crWIk"
+
+    #请求参数：
+    params:
+      flag: 0
+      imei: 353222063475100
+      version: 259
+      x_auth_mode: client_auth
+      is_gzip: true
+      device_type: 1
+      os_name: samsung-SM-G900F
+      os_version: 6.0.1
+      city: 北京市
+      channel_source:

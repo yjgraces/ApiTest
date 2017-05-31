@@ -1,0 +1,29 @@
+#模块名
+packageName: driverInfo
+
+#测试接口任务列表
+taskList:
+-   id: 1
+    #测试方法名
+    testName: testGetCollectedList
+    #服务uri，注意带/
+    uri: /Driver/GetCollectedList
+    methodType: post
+    #如果需要设置header，就写，不需要可以去掉
+    headers:
+      Authorization: OAuth oauth_consumer_key="2afdd89f5c6dbdc34542ab04933a091004eba18e2",oauth_signature_method="PLAINTEXT",x_auth_mode="client_auth",oauth_version="1.0",oauth_signature="5sARLGoVkNAPhh5wq1Hl95crWIk"
+
+    #请求参数
+    params:
+      cellphone: 16820160315
+      code_type: 1
+      area_code: 86
+      imei: 353222063475111
+      version: 259
+      x_auth_mode: client_auth
+      is_gzip: 1
+      device_type: 1
+      os_name: samsung-SM-G900F
+      os_version: 6.0.1
+      city: 北京市
+

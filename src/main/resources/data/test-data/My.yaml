@@ -1,0 +1,371 @@
+#模块名
+packageName: My
+
+#测试接口任务列表
+taskList:
+-   id: 1
+    #测试方法名
+    testName: testGetDriverEvalute
+    #服务uri，注意带/
+    uri:   /V1/Driver/GetDriverEvalute
+    methodType: get
+    #如果需要设置header，就写，不需要可以去掉
+    headers:
+      Authorization: OAuth oauth_consumer_key="2afdd89f5c6dbdc34542ab04933a091004eba18e2",oauth_signature_method="PLAINTEXT",x_auth_mode="client_auth",oauth_version="1.0",oauth_signature="5sARLGoVkNAPhh5wq1Hl95crWIk"
+
+    #请求参数：
+    params:
+      imei: 353222063475100
+      version: 259
+      x_auth_mode: client_auth
+      is_gzip: true
+      device_type: 1
+      os_name: samsung-SM-G900F
+      os_version: 6.0.1
+      city: 北京市
+      channel_source:
+
+
+-   id: 2
+    #测试方法名
+    testName: testGetDriverLevelInfo
+    #服务uri，注意带/
+    uri:    /V4/Driver/GetDriverLevelInfo
+    methodType: get
+    #如果需要设置header，就写，不需要可以去掉
+    headers:
+      Authorization: OAuth oauth_consumer_key="2afdd89f5c6dbdc34542ab04933a091004eba18e2",oauth_signature_method="PLAINTEXT",x_auth_mode="client_auth",oauth_version="1.0",oauth_signature="5sARLGoVkNAPhh5wq1Hl95crWIk"
+    #请求参数：
+    params:
+      imei: 353222063475100
+      version: 259
+      x_auth_mode: client_auth
+      is_gzip: true
+      device_type: 1
+      os_name: samsung-SM-G900F
+      os_version: 6.0.1
+      city: 北京市
+      channel_source:
+
+
+-   id: 3
+    #测试方法名
+    testName: testGetDriverLevelDetailMonth
+    #服务uri，注意带/
+    uri:    /V4/Driver/getDriverLevelDetailMonth
+    methodType: get
+    #如果需要设置header，就写，不需要可以去掉
+    headers:
+      Authorization: OAuth oauth_consumer_key="2afdd89f5c6dbdc34542ab04933a091004eba18e2",oauth_signature_method="PLAINTEXT",x_auth_mode="client_auth",oauth_version="1.0",oauth_signature="5sARLGoVkNAPhh5wq1Hl95crWIk"
+    #请求参数：
+    params:
+      imei: 353222063475100
+      version: 259
+      x_auth_mode: client_auth
+      is_gzip: true
+      device_type: 1
+      os_name: samsung-SM-G900F
+      os_version: 6.0.1
+      city: 北京市
+      channel_source:
+
+
+-   id: 4
+    #测试方法名
+    testName: testGetDriverEvaluteDetail
+    #服务uri，注意带/
+    uri:   /V1/Driver/GetDriverEvaluteDetail
+    methodType: get
+    #如果需要设置header，就写，不需要可以去掉
+    headers:
+      Authorization: OAuth oauth_consumer_key="2afdd89f5c6dbdc34542ab04933a091004eba18e2",oauth_signature_method="PLAINTEXT",x_auth_mode="client_auth",oauth_version="1.0",oauth_signature="5sARLGoVkNAPhh5wq1Hl95crWIk"
+
+    #请求参数：
+    params:
+      imei: 353222063475100
+      version: 259
+      x_auth_mode: client_auth
+      is_gzip: true
+      device_type: 1
+      os_name: samsung-SM-G900F
+      os_version: 6.0.1
+      city: 北京市
+      channel_source:
+
+
+
+-   id: 5
+    #测试方法名
+    testName: testGetDriverLevelDetailDay
+    #服务uri，注意带/
+    uri:   /V4/Driver/getDriverLevelDetailDay
+    methodType: get
+    #如果需要设置header，就写，不需要可以去掉
+    headers:
+      Authorization: OAuth oauth_consumer_key="2afdd89f5c6dbdc34542ab04933a091004eba18e2",oauth_signature_method="PLAINTEXT",x_auth_mode="client_auth",oauth_version="1.0",oauth_signature="5sARLGoVkNAPhh5wq1Hl95crWIk"
+
+    #请求参数：
+    params:
+      date: 20170320
+      imei: 353222063475100
+      version: 259
+      x_auth_mode: client_auth
+      is_gzip: true
+      device_type: 1
+      os_name: samsung-SM-G900F
+      os_version: 6.0.1
+      city: 北京市
+      channel_source:
+
+
+-   id: 6
+    #测试方法名
+    testName: testSetBankCard
+    #服务uri，注意带/
+    uri:   /V4/Driver/SetBankCard
+    methodType: post
+    #如果需要设置header，就写，不需要可以去掉
+    headers:
+      Authorization: OAuth oauth_consumer_key="2afdd89f5c6dbdc34542ab04933a091004eba18e2",oauth_signature_method="PLAINTEXT",x_auth_mode="client_auth",oauth_version="1.0",oauth_signature="5sARLGoVkNAPhh5wq1Hl95crWIk"
+
+    #请求参数：
+    params:
+      bank_card: 62284800182987646977
+      bank_code: ABC
+      bank: 中国农业银行
+      imei: 353222063475100
+      version: 259
+      x_auth_mode: client_auth
+      is_gzip: true
+      device_type: 1
+      os_name: samsung-SM-G900F
+      os_version: 6.0.1
+      city: 北京市
+      channel_source:
+
+-   id: 7
+    #测试方法名  设置司机举报的订单
+    testName:  testSetDriverReport
+    uri: /Driver/SetDriverReport
+    methodType: post
+    headers:
+      Authorization: OAuth oauth_consumer_key="2afdd89f5c6dbdc34542ab04933a091004eba18e2",oauth_signature_method="PLAINTEXT",x_auth_mode="client_auth",oauth_version="1.0",oauth_signature="5sARLGoVkNAPhh5wq1Hl95crWIk"
+      Content-Type: application/x-www-form-urlencoded
+    params:
+      order_id: 6419141948552985256 
+      type: 1
+      content: 欺诈乘客！电话接通后说我取消好了！连续刷单！连续取消！平台管不管！
+      
+-   id: 8
+    #测试方法名  一人多车获取车辆信息
+    testName:  testGetOneMoreCarInfo
+    uri: /V6/Driver/GetOneMoreCarInfo
+    methodType: get
+    headers:
+      Authorization: OAuth oauth_consumer_key="2afdd89f5c6dbdc34542ab04933a091004eba18e2",oauth_signature_method="PLAINTEXT",x_auth_mode="client_auth",oauth_version="1.0",oauth_signature="5sARLGoVkNAPhh5wq1Hl95crWIk"
+      Content-Type: application/x-www-form-urlencoded
+    params: 
+    
+-   id: 9
+    #测试方法名  一人多车选择使用车辆
+    testName:  testUpdateOneMoreCarInfo
+    uri: /V6/Driver/UpdateOneMoreCarInfo
+    methodType: post
+    headers:
+      Authorization: OAuth oauth_consumer_key="2afdd89f5c6dbdc34542ab04933a091004eba18e2",oauth_signature_method="PLAINTEXT",x_auth_mode="client_auth",oauth_version="1.0",oauth_signature="5sARLGoVkNAPhh5wq1Hl95crWIk"
+      Content-Type: application/x-www-form-urlencoded
+    params:
+      car_id_used: 51
+      car_id_back: 50072277
+      
+-   id: 10
+    #测试方法名  司机为收藏乘客添加备注
+    testName:  testSetDriverNotes
+    uri: /Driver/SetDriverNotes
+    methodType: post
+    headers:
+      Authorization: OAuth oauth_consumer_key="2afdd89f5c6dbdc34542ab04933a091004eba18e2",oauth_signature_method="PLAINTEXT",x_auth_mode="client_auth",oauth_version="1.0",oauth_signature="5sARLGoVkNAPhh5wq1Hl95crWIk"
+      Content-Type: application/x-www-form-urlencoded
+    params:
+      user_id: 50058060
+      driver_note: 长途
+      
+-   id: 11
+    #测试方法名  添加或移除司机拉黑的乘客
+    testName:  testBlackList
+    uri: /Driver/BlackList
+    methodType: get
+    headers:
+      Authorization: OAuth oauth_consumer_key="2afdd89f5c6dbdc34542ab04933a091004eba18e2",oauth_signature_method="PLAINTEXT",x_auth_mode="client_auth",oauth_version="1.0",oauth_signature="5sARLGoVkNAPhh5wq1Hl95crWIk"
+      Content-Type: application/x-www-form-urlencoded
+    params:
+      black_list_id: 2117
+      
+#-   id: 11
+    #测试方法名  添加或移除司机拉黑的乘客
+    #testName:  testBlackList1
+    #uri: /Driver/BlackList
+    #methodType: post
+    #headers:
+      #Authorization: OAuth oauth_consumer_key="2afdd89f5c6dbdc34542ab04933a091004eba18e2",oauth_signature_method="PLAINTEXT",x_auth_mode="client_auth",oauth_version="1.0",oauth_signature="5sARLGoVkNAPhh5wq1Hl95crWIk"
+      #Content-Type: application/x-www-form-urlencoded
+    #params:
+      #black_list_id: 2115
+
+-   id: 12
+    #测试方法名  获取个性标签列表
+    testName:  testGetPersonalLabel
+    uri: /V4/Driver/GetPersonalLabel
+    methodType: get
+    headers:
+      Authorization: OAuth oauth_consumer_key="2afdd89f5c6dbdc34542ab04933a091004eba18e2",oauth_signature_method="PLAINTEXT",x_auth_mode="client_auth",oauth_version="1.0",oauth_signature="5sARLGoVkNAPhh5wq1Hl95crWIk"
+      Content-Type: application/x-www-form-urlencoded
+    params:
+      page: 1
+      page_size: 10
+      
+-   id: 13
+    #测试方法名  结算中
+    testName:  testGetInBalanceList
+    uri: /V4/Driver/GetInBalanceList
+    methodType: get
+    headers:
+      Authorization: OAuth oauth_consumer_key="2afdd89f5c6dbdc34542ab04933a091004eba18e2",oauth_signature_method="PLAINTEXT",x_auth_mode="client_auth",oauth_version="1.0",oauth_signature="5sARLGoVkNAPhh5wq1Hl95crWIk"
+      Content-Type: application/x-www-form-urlencoded
+    params:
+      page_num: 5
+      
+-   id: 14
+    #测试方法名  提现记录详情页
+    testName:  testWithDrawDetail
+    uri: /V6/Driver/WithDrawDetail
+    methodType: get
+    headers:
+      Authorization: OAuth oauth_consumer_key="2afdd89f5c6dbdc34542ab04933a091004eba18e2",oauth_signature_method="PLAINTEXT",x_auth_mode="client_auth",oauth_version="1.0",oauth_signature="5sARLGoVkNAPhh5wq1Hl95crWIk"
+      Content-Type: application/x-www-form-urlencoded
+    params:
+      recharge_transaction_id: 245382
+
+-   id: 15
+    #测试方法名  申诉机会次数获取
+    testName:  testGetAppealContent
+    uri: /v4/Driver/GetAppealContent
+    methodType: get
+    headers:
+      Authorization: OAuth oauth_consumer_key="2afdd89f5c6dbdc34542ab04933a091004eba18e2",oauth_signature_method="PLAINTEXT",x_auth_mode="client_auth",oauth_version="1.0",oauth_signature="5sARLGoVkNAPhh5wq1Hl95crWIk"
+      Content-Type: application/x-www-form-urlencoded
+    params:
+    
+-   id: 16
+    #测试方法名  申诉内容提交
+    testName:  testAppeal
+    uri: /v4/Driver/Appeal
+    methodType: post
+    headers:
+      Authorization: OAuth oauth_consumer_key="2afdd89f5c6dbdc34542ab04933a091004eba18e2",oauth_signature_method="PLAINTEXT",x_auth_mode="client_auth",oauth_version="1.0",oauth_signature="5sARLGoVkNAPhh5wq1Hl95crWIk"
+      Content-Type: application/x-www-form-urlencoded
+    params:
+      appeal_type: 1
+      appeal_content: 测试订单！            
+      
+-   id: 17
+    #测试方法名  获取所有申诉记录
+    testName:  testGetDriverAppealList
+    uri: /v4/Driver/GetDriverAppealList
+    methodType: get
+    headers:
+      Authorization: OAuth oauth_consumer_key="2afdd89f5c6dbdc34542ab04933a091004eba18e2",oauth_signature_method="PLAINTEXT",x_auth_mode="client_auth",oauth_version="1.0",oauth_signature="5sARLGoVkNAPhh5wq1Hl95crWIk"
+      Content-Type: application/x-www-form-urlencoded
+    params:
+      page: 1
+      page_size: 10
+
+-   id: 18
+    #测试方法名  设置当前车型
+    testName:  testSetCarType
+    uri: /v4/Driver/SetCarType
+    methodType: post
+    headers:
+      Authorization: OAuth oauth_consumer_key="2afdd89f5c6dbdc34542ab04933a091004eba18e2",oauth_signature_method="PLAINTEXT",x_auth_mode="client_auth",oauth_version="1.0",oauth_signature="5sARLGoVkNAPhh5wq1Hl95crWIk"
+      Content-Type: application/x-www-form-urlencoded
+    params:
+      car_type_id: 2      
+      
+-   id: 19
+    #测试方法名  获取用户信息
+    testName:  testGetUserInfo
+    uri: /V4/Driver/GetUserInfo
+    methodType: get
+    headers:
+      Authorization: OAuth oauth_consumer_key="2afdd89f5c6dbdc34542ab04933a091004eba18e2",oauth_signature_method="PLAINTEXT",x_auth_mode="client_auth",oauth_version="1.0",oauth_signature="5sARLGoVkNAPhh5wq1Hl95crWIk"
+      Content-Type: application/x-www-form-urlencoded
+    params:
+      user_id: 50058060
+      
+-   id: 20
+    #测试方法名  取得司机收入统计信息
+    testName:  testGetDriverIncomeStat
+    uri: /Driver/GetDriverIncomeStat
+    methodType: get
+    headers:
+      Authorization: OAuth oauth_consumer_key="2afdd89f5c6dbdc34542ab04933a091004eba18e2",oauth_signature_method="PLAINTEXT",x_auth_mode="client_auth",oauth_version="1.0",oauth_signature="5sARLGoVkNAPhh5wq1Hl95crWIk"
+      Content-Type: application/x-www-form-urlencoded
+    params:
+      driver_id: 50062329
+      type: month
+      
+-   id: 21
+    #测试方法名  手机信息
+    testName:  testNotifyRecommend
+    uri: /Global/NotifyRecommend
+    methodType: post
+    headers:
+      Authorization: OAuth oauth_consumer_key="2afdd89f5c6dbdc34542ab04933a091004eba18e2",oauth_signature_method="PLAINTEXT",x_auth_mode="client_auth",oauth_version="1.0",oauth_signature="5sARLGoVkNAPhh5wq1Hl95crWIk"
+      Content-Type: application/x-www-form-urlencoded
+    params:
+      names: MI MAX
+      is_super: 0
+      
+-   id: 22
+    #测试方法名  获取弹屏
+    testName:  testGetPopScreen
+    uri: /V6/CarMaster/GetPopScreen
+    methodType: get
+    headers:
+      Authorization: OAuth oauth_consumer_key="2afdd89f5c6dbdc34542ab04933a091004eba18e2",oauth_signature_method="PLAINTEXT",x_auth_mode="client_auth",oauth_version="1.0",oauth_signature="5sARLGoVkNAPhh5wq1Hl95crWIk"
+      Content-Type: application/x-www-form-urlencoded
+    params:
+      city: 北京市
+      
+-   id: 23
+    #测试方法名  系统服务时间戳
+    testName:  testGetServerTime
+    uri: /V6/Driver/GetServerTime
+    methodType: get
+    headers:
+      Authorization: OAuth oauth_consumer_key="2afdd89f5c6dbdc34542ab04933a091004eba18e2",oauth_signature_method="PLAINTEXT",x_auth_mode="client_auth",oauth_version="1.0",oauth_signature="5sARLGoVkNAPhh5wq1Hl95crWIk"
+      Content-Type: application/x-www-form-urlencoded
+    params:
+    
+-   id: 24
+    #测试方法名  获取账户余额
+    testName:  testGetDriverAmount
+    uri: /V2/Driver/GetDriverAmount
+    methodType: post
+    headers:
+      Authorization: OAuth oauth_consumer_key="2afdd89f5c6dbdc34542ab04933a091004eba18e2",oauth_signature_method="PLAINTEXT",x_auth_mode="client_auth",oauth_version="1.0",oauth_signature="5sARLGoVkNAPhh5wq1Hl95crWIk"
+      Content-Type: application/x-www-form-urlencoded
+    params:
+    
+-   id: 25
+    #测试方法名  记录司机导航调用日志
+    testName:  testMapCallDaily
+    uri: /V6/Driver/MapCallDaily
+    methodType: post
+    headers:
+      Authorization: OAuth oauth_consumer_key="2afdd89f5c6dbdc34542ab04933a091004eba18e2",oauth_signature_method="PLAINTEXT",x_auth_mode="client_auth",oauth_version="1.0",oauth_signature="5sARLGoVkNAPhh5wq1Hl95crWIk"
+      Content-Type: application/x-www-form-urlencoded
+    params:
+      service_order_id: 6399493439545490047
+      call_reason: 1
+      map_type: 1                                                                            

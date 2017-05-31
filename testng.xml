@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--
+testNG可以从多个线程中运行测试方法，只需要将配置文件中suite的parallel属性设为true。
+线程的数目在thread-count中设置。
+如果两个方法有依赖关系，那么他们将在一个线程中运行，
+除此之外，都可以在多个线程中并发的运行
+-->
+<suite name='auto-test' parallel="false" thread-count="1">
+    <test annotations="JDK" junit="false" name="autotest" verbose="5"
+          preserve-order="true"> 
+        <classes>
+         
+          <class name="com.yd.test.DriverInfo"></class>
+          <class name="com.yd.test.DriverLogin"></class>
+          <class name="com.yd.test.ListenCarSetType"></class> 
+          <class name="com.yd.test.Order"></class>
+          <class name="com.yd.test.My"></class> 
+          <class name="com.yd.test.SpecialActivities"></class>
+           
+          <!--  <class name="com.yd.test.DriverLogin"></class> --> 
+          <!-- 
+          <class name="com.yd.test.MemberStat"></class>
+          --> 
+
+            
+        </classes>
+    </test>
+    <listeners>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+    </listeners>
+    <usedefaultlisteners name="false" />
+</suite>

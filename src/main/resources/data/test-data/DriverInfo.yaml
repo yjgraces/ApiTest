@@ -1,0 +1,642 @@
+#模块名
+packageName: driverInfo
+
+#测试接口任务列表
+taskList:
+-   id: 1
+    #测试方法名  司机信息
+    testName: testMember
+    #服务uri，注意带/
+    uri: /driver/member
+    methodType: get
+    #如果需要设置header，就写，不需要可以去掉
+    headers:
+      Authorization: OAuth oauth_consumer_key="2afdd89f5c6dbdc34542ab04933a091004eba18e2",oauth_signature_method="PLAINTEXT",x_auth_mode="client_auth",oauth_version="1.0",oauth_signature="5sARLGoVkNAPhh5wq1Hl95crWIk"
+    #请求参数
+    params:
+      cellphone: 16820170321
+      code_type: 1
+      area_code: 86
+      imei: 353222063475222
+      version: 259
+      x_auth_mode: client_auth
+      is_gzip: 1
+      device_type: 1
+      os_name: samsung-SM-G900F
+      os_version: 6.0.1
+      city: 北京市
+      
+-   id: 2
+    #测试方法名  收藏我的乘客
+    testName: testGetCollectedList
+    uri: /Driver/GetCollectedList
+    methodType: post
+    headers:
+      Authorization: OAuth oauth_consumer_key="2afdd89f5c6dbdc34542ab04933a091004eba18e2",oauth_signature_method="PLAINTEXT",x_auth_mode="client_auth",oauth_version="1.0",oauth_signature="5sARLGoVkNAPhh5wq1Hl95crWIk"
+    params:
+      cellphone: 16820160315
+      code_type: 1
+      area_code: 86
+      imei: 353222063475111
+      version: 259
+      x_auth_mode: client_auth
+      is_gzip: 1
+      device_type: 1
+      os_name: samsung-SM-G900F
+      os_version: 6.0.1
+      city: 北京市
+      
+      
+-   id: 3
+    #测试方法名  参与分
+    testName: testGetContributionOrder
+    uri: /Driver/GetContributionOrder
+    methodType: get
+    headers:
+      Authorization: OAuth oauth_consumer_key="2afdd89f5c6dbdc34542ab04933a091004eba18e2",oauth_signature_method="PLAINTEXT",x_auth_mode="client_auth",oauth_version="1.0",oauth_signature="5sARLGoVkNAPhh5wq1Hl95crWIk"
+      Content-Type: application/x-www-form-urlencoded
+    params:
+      cellphone: 16820160309
+      area_code: 86
+      imei: 353222063475100
+      version: 259
+      x_auth_mode: client_auth
+      is_gzip: 1
+      device_type: 1
+      os_name: samsung-SM-G900F
+      os_version: 6.0.1
+      city: 北京市   
+      type: 
+-   id: 4
+    #测试方法名  司机今日收入
+    testName: testGetDriverDayOrder
+    uri: /V1/Driver/GetDriverDayOrder
+    methodType: get
+    headers:
+      Authorization: OAuth oauth_consumer_key="2afdd89f5c6dbdc34542ab04933a091004eba18e2",oauth_signature_method="PLAINTEXT",x_auth_mode="client_auth",oauth_version="1.0",oauth_signature="5sARLGoVkNAPhh5wq1Hl95crWIk"
+      Content-Type: application/x-www-form-urlencoded
+    params:
+      cellphone: 16820160309
+      code_type: 1
+      area_code: 86
+      imei: 353222063475100
+      version: 259
+      x_auth_mode: client_auth
+      is_gzip: 1
+      device_type: 1
+      os_name: samsung-SM-G900F
+      os_version: 6.0.1
+      city: 北京市          
+
+-   id: 5
+    #测试方法名  司机好评率
+    testName: testGetDriverEvalute
+    uri: /V1/Driver/GetDriverEvalute
+    methodType: get
+    headers:
+      Authorization: OAuth oauth_consumer_key="2afdd89f5c6dbdc34542ab04933a091004eba18e2",oauth_signature_method="PLAINTEXT",x_auth_mode="client_auth",oauth_version="1.0",oauth_signature="5sARLGoVkNAPhh5wq1Hl95crWIk"
+      Content-Type: application/x-www-form-urlencoded
+    params:
+      cellphone: 16820160309
+      code_type: 1
+      area_code: 86
+      imei: 353222063475100
+      version: 259
+      x_auth_mode: client_auth
+      is_gzip: 1
+      device_type: 1
+      os_name: samsung-SM-G900F
+      os_version: 6.0.1
+      city: 北京市  
+
+-   id: 6
+    #测试方法名  司机每日经验明细
+    testName: testGetDriverLevelDetailDay
+    uri: /V4/Driver/getDriverLevelDetailDay
+    methodType: get
+    headers:
+      Authorization: OAuth oauth_consumer_key="2afdd89f5c6dbdc34542ab04933a091004eba18e2",oauth_signature_method="PLAINTEXT",x_auth_mode="client_auth",oauth_version="1.0",oauth_signature="5sARLGoVkNAPhh5wq1Hl95crWIk"
+      Content-Type: application/x-www-form-urlencoded
+    params:
+      cellphone: 16820160309
+      code_type: 1
+      area_code: 86
+      imei: 353222063475100
+      version: 259
+      x_auth_mode: client_auth
+      is_gzip: 1
+      device_type: 1
+      os_name: samsung-SM-G900F
+      os_version: 6.0.1
+      city: 北京市   
+      date: 20170320 
+     
+-   id: 7
+    #测试方法名  服务特色
+    testName: testSetSellingPoint
+    uri: /Driver/SetSellingPoint
+    methodType: get
+    headers:
+      Authorization: OAuth oauth_consumer_key="2afdd89f5c6dbdc34542ab04933a091004eba18e2",oauth_signature_method="PLAINTEXT",x_auth_mode="client_auth",oauth_version="1.0",oauth_signature="5sARLGoVkNAPhh5wq1Hl95crWIk"
+      Content-Type: application/x-www-form-urlencoded
+    params:
+      cellphone: 16820160309
+      code_type: 1
+      area_code: 86
+      imei: 353222063475100
+      version: 259
+      x_auth_mode: client_auth
+      is_gzip: 1
+      device_type: 1
+      os_name: samsung-SM-G900F
+      os_version: 6.0.1
+      city: 北京市   
+      get_my_option: 1    
+
+-   id: 8
+    #测试方法名  设置常用上车/下车地点/常活动区域
+    testName: testSetMyInfo
+    uri: /v4/Driver/SetMyInfo
+    methodType: post
+    headers:
+      Authorization: OAuth oauth_consumer_key="2afdd89f5c6dbdc34542ab04933a091004eba18e2",oauth_signature_method="PLAINTEXT",x_auth_mode="client_auth",oauth_version="1.0",oauth_signature="5sARLGoVkNAPhh5wq1Hl95crWIk"
+      Content-Type: application/x-www-form-urlencoded
+    params:
+      cellphone: 16820160309
+      code_type: 1
+      area_code: 86
+      imei: 353222063475100
+      version: 259
+      x_auth_mode: client_auth
+      is_gzip: 1
+      device_type: 1
+      os_name: samsung-SM-G900F
+      os_version: 6.0.1
+      city: 北京市   
+      get_my_option: 1      
+      in_coord_type: baidu
+      start_longitude: 116.31401673483137
+      start_latitude: 39.98949103552112
+
+-   id: 9
+    #测试方法名  设置服务车型
+    testName: testSetCar
+    uri: /Driver/SetCar
+    methodType: get
+    headers:
+      Authorization: OAuth oauth_consumer_key="2afdd89f5c6dbdc34542ab04933a091004eba18e2",oauth_signature_method="PLAINTEXT",x_auth_mode="client_auth",oauth_version="1.0",oauth_signature="5sARLGoVkNAPhh5wq1Hl95crWIk"
+      Content-Type: application/x-www-form-urlencoded
+    params:
+      cellphone: 16820160309
+      code_type: 1
+      area_code: 86
+      imei: 353222063475100
+      version: 259
+      x_auth_mode: client_auth
+      is_gzip: 1
+      device_type: 1
+      os_name: samsung-SM-G900F
+      os_version: 6.0.1
+      city: 北京市   
+      get_my_option: 1
+      
+-   id: 10
+    #测试方法名  给乘客完成评价
+    testName: testJudgeOfUser
+    uri: /driver/JudgeOfUser
+    methodType: post
+    headers:
+      Authorization: OAuth oauth_consumer_key="2afdd89f5c6dbdc34542ab04933a091004eba18e2",oauth_signature_method="PLAINTEXT",x_auth_mode="client_auth",oauth_version="1.0",oauth_signature="5sARLGoVkNAPhh5wq1Hl95crWIk"
+      Content-Type: application/x-www-form-urlencoded
+    params:
+      cellphone: 16820160309
+      code_type: 1
+      area_code: 86
+      imei: 353222063475100
+      version: 259
+      x_auth_mode: client_auth
+      is_gzip: 1
+      device_type: 1
+      os_name: samsung-SM-G900F
+      os_version: 6.0.1
+      city: 北京市        
+      in_black_list: 0
+      score: 2.0
+      service_order_id: 6399493439545490047
+      comment_user_tag_id: 52%2C54
+      
+-   id: 11
+    #测试方法名  订单列表
+    testName: testGetDriverTodayData
+    uri: /V1/Driver/GetDriverTodayData
+    methodType: get
+    headers:
+      Authorization: OAuth oauth_consumer_key="2afdd89f5c6dbdc34542ab04933a091004eba18e2",oauth_signature_method="PLAINTEXT",x_auth_mode="client_auth",oauth_version="1.0",oauth_signature="5sARLGoVkNAPhh5wq1Hl95crWIk"
+      Content-Type: application/x-www-form-urlencoded
+    params:
+      cellphone: 16820160309
+      code_type: 1
+      area_code: 86
+      imei: 353222063475100
+      version: 259
+      x_auth_mode: client_auth
+      is_gzip: 1
+      device_type: 1
+      os_name: samsung-SM-G900F
+      os_version: 6.0.1
+      city: 北京市        
+      page_num: 1  
+      out_coord_type: baidu  
+
+-   id: 12
+    #测试方法名  我的钱包
+    testName: testGetDriverAccount
+    uri: /v4/Driver/GetDriverAccount
+    methodType: get
+    headers:
+      Authorization: OAuth oauth_consumer_key="2afdd89f5c6dbdc34542ab04933a091004eba18e2",oauth_signature_method="PLAINTEXT",x_auth_mode="client_auth",oauth_version="1.0",oauth_signature="5sARLGoVkNAPhh5wq1Hl95crWIk"
+      Content-Type: application/x-www-form-urlencoded
+    params:
+      cellphone: 16820160309
+      code_type: 1
+      area_code: 86
+      imei: 353222063475100
+      version: 259
+      x_auth_mode: client_auth
+      is_gzip: 1
+      device_type: 1
+      os_name: samsung-SM-G900F
+      os_version: 6.0.1
+      city: 北京市 
+             
+-   id: 13
+    #测试方法名  我的账号详情
+    testName: testGetDriverAccountDetail
+    uri: /V2/Driver/getDriverAccountDetail
+    methodType: get
+    headers:
+      Authorization: OAuth oauth_consumer_key="2afdd89f5c6dbdc34542ab04933a091004eba18e2",oauth_signature_method="PLAINTEXT",x_auth_mode="client_auth",oauth_version="1.0",oauth_signature="5sARLGoVkNAPhh5wq1Hl95crWIk"
+      Content-Type: application/x-www-form-urlencoded
+    params:
+      cellphone: 16820160309
+      code_type: 1
+      area_code: 86
+      imei: 353222063475100
+      version: 259
+      x_auth_mode: client_auth
+      is_gzip: 1
+      device_type: 1
+      os_name: samsung-SM-G900F
+      os_version: 6.0.1
+      city: 北京市  
+      reason: 10,18
+      page_num: 1 
+
+-   id: 14
+    #测试方法名  可绑定银行
+    testName:  testGetWithdrawCashBank
+    uri: /v4/Driver/GetWithdrawCashBank
+    methodType: get
+    headers:
+      Authorization: OAuth oauth_consumer_key="2afdd89f5c6dbdc34542ab04933a091004eba18e2",oauth_signature_method="PLAINTEXT",x_auth_mode="client_auth",oauth_version="1.0",oauth_signature="5sARLGoVkNAPhh5wq1Hl95crWIk"
+      Content-Type: application/x-www-form-urlencoded
+    params:
+      cellphone: 16820160309
+      code_type: 1
+      area_code: 86
+      imei: 353222063475100
+      version: 259
+      x_auth_mode: client_auth
+      is_gzip: 1
+      device_type: 1
+      os_name: samsung-SM-G900F
+      os_version: 6.0.1
+      city: 北京市 
+
+-   id: 15
+    #测试方法名  设置绑定银行数据
+    testName:  testSetBankCard
+    uri: /v4/Driver/SetBankCard
+    methodType: post
+    headers:
+      Authorization: OAuth oauth_consumer_key="2afdd89f5c6dbdc34542ab04933a091004eba18e2",oauth_signature_method="PLAINTEXT",x_auth_mode="client_auth",oauth_version="1.0",oauth_signature="5sARLGoVkNAPhh5wq1Hl95crWIk"
+      Content-Type: application/x-www-form-urlencoded
+    params:
+      cellphone: 16820160309
+      code_type: 1
+      area_code: 86
+      imei: 353222063475100
+      version: 259
+      x_auth_mode: client_auth
+      is_gzip: 1
+      device_type: 1
+      os_name: samsung-SM-G900F
+      os_version: 6.0.1
+      city: 北京市 
+      bank_card: 6228480018752246977
+      bank_code: ABC
+      bank: 中国农业银行
+
+-   id: 16
+    #测试方法名  司机验证码
+    testName:  testGetAuthCode
+    uri: /V6/CarMaster/CreateAuthCode
+    methodType: post
+    headers:
+      Authorization: OAuth oauth_consumer_key="2afdd89f5c6dbdc34542ab04933a091004eba18e2",oauth_signature_method="PLAINTEXT",x_auth_mode="client_auth",oauth_version="1.0",oauth_signature="5sARLGoVkNAPhh5wq1Hl95crWIk"
+      Content-Type: application/x-www-form-urlencoded
+    params:
+      cellphone: 16820160309
+      code_type: 1
+      area_code: 86
+      imei: 353222063475100
+      version: 259
+      x_auth_mode: client_auth
+      is_gzip: 1
+      device_type: 1
+      os_name: samsung-SM-G900F
+      os_version: 6.0.1
+      city: 北京市 
+   
+-   id: 17
+    #测试方法名 车主端首页信息
+    testName:  testGetHomePage
+    uri: /V6/CarMaster/GetHomePage
+    methodType: get
+    headers:
+      Authorization: OAuth oauth_consumer_key="2afdd89f5c6dbdc34542ab04933a091004eba18e2",oauth_signature_method="PLAINTEXT",x_auth_mode="client_auth",oauth_version="1.0",oauth_signature="5sARLGoVkNAPhh5wq1Hl95crWIk"
+      Content-Type: application/x-www-form-urlencoded
+    params:
+      cellphone: 16820160309
+      code_type: 1
+      area_code: 86
+      imei: 353222063475100
+      version: 259
+      x_auth_mode: client_auth
+      is_gzip: 1
+      device_type: 1
+      os_name: samsung-SM-G900F
+      os_version: 6.0.1
+      city: 北京市 
+           
+-   id: 18
+    #测试方法名 车主端弹屏
+    testName:  testGetPopScreen
+    uri: /oauth/accessToken
+    methodType: get
+    headers:
+      Authorization: OAuth oauth_consumer_key="2afdd89f5c6dbdc34542ab04933a091004eba18e2",oauth_signature_method="PLAINTEXT",x_auth_mode="client_auth",oauth_version="1.0",oauth_signature="5sARLGoVkNAPhh5wq1Hl95crWIk"
+      Content-Type: application/x-www-form-urlencoded
+    params:
+      cellphone: 16820160309
+      code_type: 1
+      area_code: 86
+      imei: 353222063475100
+      version: 259
+      x_auth_mode: client_auth
+      is_gzip: 1
+      device_type: 1
+      os_name: samsung-SM-G900F
+      os_version: 6.0.1
+      city: 北京市      
+     
+-   id: 19
+    #测试方法名 车主端闪屏
+    testName:  testGetSplash
+    uri: /V6/CarMaster/GetSplash
+    methodType: get
+    headers:
+      Authorization: OAuth oauth_consumer_key="2afdd89f5c6dbdc34542ab04933a091004eba18e2",oauth_signature_method="PLAINTEXT",x_auth_mode="client_auth",oauth_version="1.0",oauth_signature="5sARLGoVkNAPhh5wq1Hl95crWIk"
+      Content-Type: application/x-www-form-urlencoded
+    params:
+      cellphone: 16820160309
+      code_type: 1
+      area_code: 86
+      imei: 353222063475100
+      version: 259
+      x_auth_mode: client_auth
+      is_gzip: 1
+      device_type: 1
+      os_name: samsung-SM-G900F
+      os_version: 6.0.1
+      city: 北京市       
+     
+-   id: 20
+    #测试方法名 发送信息
+    testName:  testSendMessage
+    uri: /driver/SendMessage
+    methodType: post
+    headers:
+      Authorization: OAuth oauth_consumer_key="2afdd89f5c6dbdc34542ab04933a091004eba18e2",oauth_signature_method="PLAINTEXT",x_auth_mode="client_auth",oauth_version="1.0",oauth_signature="5sARLGoVkNAPhh5wq1Hl95crWIk"
+      Content-Type: application/x-www-form-urlencoded
+    params:
+      cellphone: 16820160309
+      code_type: 1
+      area_code: 86
+      imei: 353222063475100
+      version: 259
+      x_auth_mode: client_auth
+      is_gzip: 1
+      device_type: 1
+      os_name: samsung-SM-G900F
+      os_version: 6.0.1
+      city: 北京市 
+      service_order_id: 6399493439545490047
+      content: hello,很高兴为您服务，我会准时到达的。您有什么要求，可以在这里告诉我
+      is_crm: 0
+ 
+-   id: 21
+    #测试方法名 拉黑我的乘客
+    testName:  testBlackList
+    uri: /Driver/BlackList
+    methodType: get
+    headers:
+      Authorization: OAuth oauth_consumer_key="2afdd89f5c6dbdc34542ab04933a091004eba18e2",oauth_signature_method="PLAINTEXT",x_auth_mode="client_auth",oauth_version="1.0",oauth_signature="5sARLGoVkNAPhh5wq1Hl95crWIk"
+      Content-Type: application/x-www-form-urlencoded
+    params:
+      cellphone: 16820160309
+      code_type: 1
+      area_code: 86
+      imei: 353222063475100
+      version: 259
+      x_auth_mode: client_auth
+      is_gzip: 1
+      device_type: 1
+      os_name: samsung-SM-G900F
+      os_version: 6.0.1
+      city: 北京市 
+    
+      
+-   id: 22
+    #测试方法名 司机可变更的车型列表
+    testName:  testGetLowCarType
+    uri: /V4/Driver/GetLowCarType
+    methodType: get
+    headers:
+      Authorization: OAuth oauth_consumer_key="2afdd89f5c6dbdc34542ab04933a091004eba18e2",oauth_signature_method="PLAINTEXT",x_auth_mode="client_auth",oauth_version="1.0",oauth_signature="5sARLGoVkNAPhh5wq1Hl95crWIk"
+      Content-Type: application/x-www-form-urlencoded
+    params:
+      cellphone: 16820160309
+      code_type: 1
+      area_code: 86
+      imei: 353222063475100
+      version: 259
+      x_auth_mode: client_auth
+      is_gzip: 1
+      device_type: 1
+      os_name: samsung-SM-G900F
+      os_version: 6.0.1
+      city: 北京市       
+
+-   id: 23
+    #测试方法名 司机申请提现
+    testName:  testWithdrawDriverCash
+    uri: /Driver/WithdrawDriverCash
+    methodType: post
+    headers:
+      Authorization: OAuth oauth_consumer_key="2afdd89f5c6dbdc34542ab04933a091004eba18e2",oauth_signature_method="PLAINTEXT",x_auth_mode="client_auth",oauth_version="1.0",oauth_signature="5sARLGoVkNAPhh5wq1Hl95crWIk"
+      Content-Type: application/x-www-form-urlencoded
+    params:
+      cellphone: 16820160309
+      code_type: 1
+      area_code: 86
+      imei: 353222063475100
+      version: 259
+      x_auth_mode: client_auth
+      is_gzip: 1
+      device_type: 1
+      os_name: samsung-SM-G900F
+      os_version: 6.0.1
+      city: 北京市 
+      amount: 1    
+     
+-   id: 24
+    #测试方法名 司机收入相关订单明细
+    testName:  testGetDriverIncomeOrder
+    uri: /Driver/GetDriverIncomeOrder
+    methodType: get
+    headers:
+      Authorization: OAuth oauth_consumer_key="2afdd89f5c6dbdc34542ab04933a091004eba18e2",oauth_signature_method="PLAINTEXT",x_auth_mode="client_auth",oauth_version="1.0",oauth_signature="5sARLGoVkNAPhh5wq1Hl95crWIk"
+      Content-Type: application/x-www-form-urlencoded
+    params:
+      cellphone: 16820160309
+      code_type: 1
+      area_code: 86
+      imei: 353222063475100
+      version: 259
+      x_auth_mode: client_auth
+      is_gzip: 1
+      device_type: 1
+      os_name: samsung-SM-G900F
+      os_version: 6.0.1
+      city: 北京市 
+      type: month 
+      timeflag: 2017-03    
+     
+-   id: 24
+    #测试方法名 司机历史收入
+    testName:  testGetDriverIncome
+    uri: /Driver/GetDriverIncome
+    methodType: get
+    headers:
+      Authorization: OAuth oauth_consumer_key="2afdd89f5c6dbdc34542ab04933a091004eba18e2",oauth_signature_method="PLAINTEXT",x_auth_mode="client_auth",oauth_version="1.0",oauth_signature="5sARLGoVkNAPhh5wq1Hl95crWIk"
+      Content-Type: application/x-www-form-urlencoded
+    params:
+      cellphone: 16820160309
+      code_type: 1
+      area_code: 86
+      imei: 353222063475100
+      version: 259
+      x_auth_mode: client_auth
+      is_gzip: 1
+      device_type: 1
+      os_name: samsung-SM-G900F
+      os_version: 6.0.1
+      city: 北京市 
+      type: day     
+     
+    # 
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+            
+-   id: 40
+    #测试方法名  获取乘客标签
+    testName: testGetCommentUserTags
+    #服务uri，注意带/
+    uri: /v4/Driver/GetCommentUserTags
+    methodType: get
+    #如果需要设置header，就写，不需要可以去掉
+    headers:
+      Authorization: OAuth oauth_consumer_key="2afdd89f5c6dbdc34542ab04933a091004eba18e2",oauth_signature_method="PLAINTEXT",x_auth_mode="client_auth",oauth_version="1.0",oauth_signature="5sARLGoVkNAPhh5wq1Hl95crWIk"
+      Content-Type: application/x-www-form-urlencoded
+    #请求参数
+    params:
+      cellphone: 16820160309
+      code_type: 1
+      area_code: 86
+      imei: 353222063475100
+      version: 259
+      x_auth_mode: client_auth
+      is_gzip: 1
+      device_type: 1
+      os_name: samsung-SM-G900F
+      os_version: 6.0.1
+      city: 北京市          
+      user_id: 50057114 
+      order_id: 6399493439545490047
+
+-   id: 41
+    #测试方法名  获取司机全部订单收入
+    testName:  testGetDriverAllOrder
+    uri: /V4/Driver/GetDriverAllOrder
+    methodType: get
+    headers:
+      Authorization: OAuth oauth_consumer_key="2afdd89f5c6dbdc34542ab04933a091004eba18e2",oauth_signature_method="PLAINTEXT",x_auth_mode="client_auth",oauth_version="1.0",oauth_signature="5sARLGoVkNAPhh5wq1Hl95crWIk"
+      Content-Type: application/x-www-form-urlencoded
+    params:
+      page_size: 10
+      page: 1
+      
+-   id: 42
+    #测试方法名  获取司机开关设置
+    testName:  testDriverOption
+    uri: /Driver/DriverOption
+    methodType: get
+    headers:
+      Authorization: OAuth oauth_consumer_key="2afdd89f5c6dbdc34542ab04933a091004eba18e2",oauth_signature_method="PLAINTEXT",x_auth_mode="client_auth",oauth_version="1.0",oauth_signature="5sARLGoVkNAPhh5wq1Hl95crWIk"
+      Content-Type: application/x-www-form-urlencoded
+    params:
+      type: today
+
+-   id: 43
+    #测试方法名  获取司机开关设置post
+    testName:  testDriverOption1
+    uri: /Driver/DriverOption
+    methodType: post
+    headers:
+      Authorization: OAuth oauth_consumer_key="2afdd89f5c6dbdc34542ab04933a091004eba18e2",oauth_signature_method="PLAINTEXT",x_auth_mode="client_auth",oauth_version="1.0",oauth_signature="5sARLGoVkNAPhh5wq1Hl95crWIk"
+      Content-Type: application/x-www-form-urlencoded
+    params:
+      type: 50
+      status: 0    
+      
+-   id: 44
+    #测试方法名  获取派单版本
+    testName:  testGetSupportDriverVersion
+    uri: /V5/Driver/GetSupportDriverVersion
+    methodType: get
+    headers:
+      Authorization: OAuth oauth_consumer_key="2afdd89f5c6dbdc34542ab04933a091004eba18e2",oauth_signature_method="PLAINTEXT",x_auth_mode="client_auth",oauth_version="1.0",oauth_signature="5sARLGoVkNAPhh5wq1Hl95crWIk"
+      Content-Type: application/x-www-form-urlencoded
+    params:
+    
+              

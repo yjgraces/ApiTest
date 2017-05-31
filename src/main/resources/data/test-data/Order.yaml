@@ -1,0 +1,564 @@
+#模块名
+packageName: Order
+
+#测试接口任务列表
+taskList:
+-   id: 1
+    #测试方法名
+    testName: testAccept
+    #服务uri，注意带/
+    uri:  /order/operateOrder
+    methodType: post
+    #如果需要设置header，就写，不需要可以去掉
+    headers:
+      Authorization: OAuth oauth_consumer_key="2afdd89f5c6dbdc34542ab04933a091004eba18e2",oauth_signature_method="PLAINTEXT",x_auth_mode="client_auth",oauth_version="1.0",oauth_signature="5sARLGoVkNAPhh5wq1Hl95crWIk"
+
+    #请求参数：
+    params:
+      in_coord_type: baidu
+      is_auto: 0
+      method: accept
+      time: 1489998284
+      longitude: 116.316493
+      order_id: 6399493439545490047
+      version: 259
+      drive_time: 120
+      latitude: 39.989772
+      driver_add_price: 0
+      round: 1
+      distance: 0.4
+      batch: 1
+      provider: network
+      imei: 353222063475100
+      version: 259
+      x_auth_mode: client_auth
+      is_gzip: true
+      device_type: 1
+      os_name: samsung-SM-G900F
+      os_version: 6.0.1
+      city: 北京市
+      channel_source:
+
+
+-   id: 2
+    #测试方法名
+    testName: testDepart
+    #服务uri，注意带/
+    uri:  /order/operateOrder
+    methodType: post
+    #如果需要设置header，就写，不需要可以去掉
+    headers:
+      Authorization: OAuth oauth_consumer_key="2afdd89f5c6dbdc34542ab04933a091004eba18e2",oauth_signature_method="PLAINTEXT",x_auth_mode="client_auth",oauth_version="1.0",oauth_signature="5sARLGoVkNAPhh5wq1Hl95crWIk"
+
+    #请求参数：
+    params:
+      in_coord_type: baidu
+      is_auto: 0
+      method: depart
+      time: 1489998284
+      longitude: 116.316493
+      order_id: 6399493439545490047
+      version: 259
+      drive_time: 120
+      latitude: 39.989772
+      driver_add_price: 0
+      round: 1
+      distance: 0.4
+      batch: 1
+      provider: network
+      imei: 353222063475100
+      version: 259
+      x_auth_mode: client_auth
+      is_gzip: true
+      device_type: 1
+      os_name: samsung-SM-G900F
+      os_version: 6.0.1
+      city: 北京市
+      channel_source:
+
+
+-   id: 3
+    #测试方法名
+    testName: testArrive
+    #服务uri，注意带/
+    uri:  /order/operateOrder
+    methodType: post
+    #如果需要设置header，就写，不需要可以去掉
+    headers:
+      Authorization: OAuth oauth_consumer_key="2afdd89f5c6dbdc34542ab04933a091004eba18e2",oauth_signature_method="PLAINTEXT",x_auth_mode="client_auth",oauth_version="1.0",oauth_signature="5sARLGoVkNAPhh5wq1Hl95crWIk"
+
+    #请求参数：
+    params:
+      in_coord_type: baidu
+      is_auto: 0
+      method: arrive
+      time: 1489998284
+      longitude: 116.316493
+      order_id: 6399493439545490047
+      version: 259
+      drive_time: 120
+      latitude: 39.989772
+      driver_add_price: 0
+      round: 1
+      distance: 0.4
+      batch: 1
+      provider: network
+      imei: 353222063475100
+      version: 259
+      x_auth_mode: client_auth
+      is_gzip: true
+      device_type: 1
+      os_name: samsung-SM-G900F
+      os_version: 6.0.1
+      city: 北京市
+      channel_source:
+
+
+-   id: 4
+    #测试方法名
+    testName: testStart
+    #服务uri，注意带/
+    uri:  /order/operateOrder
+    methodType: post
+    #如果需要设置header，就写，不需要可以去掉
+    headers:
+      Authorization: OAuth oauth_consumer_key="2afdd89f5c6dbdc34542ab04933a091004eba18e2",oauth_signature_method="PLAINTEXT",x_auth_mode="client_auth",oauth_version="1.0",oauth_signature="5sARLGoVkNAPhh5wq1Hl95crWIk"
+
+    #请求参数：
+    params:
+      in_coord_type: baidu
+      is_auto: 0
+      method: start
+      time: 1489998284
+      longitude: 116.316493
+      order_id: 6399493439545490047
+      version: 259
+      drive_time: 120
+      latitude: 39.989772
+      driver_add_price: 0
+      round: 1
+      distance: 0.4
+      batch: 1
+      provider: network
+      imei: 353222063475100
+      version: 259
+      x_auth_mode: client_auth
+      is_gzip: true
+      device_type: 1
+      os_name: samsung-SM-G900F
+      os_version: 6.0.1
+      city: 北京市
+      channel_source:
+
+-   id: 5
+    #测试方法名
+    testName: testEnd
+    #服务uri，注意带/
+    uri:  /order/operateOrder
+    methodType: post
+    #如果需要设置header，就写，不需要可以去掉
+    headers:
+      Authorization: OAuth oauth_consumer_key="2afdd89f5c6dbdc34542ab04933a091004eba18e2",oauth_signature_method="PLAINTEXT",x_auth_mode="client_auth",oauth_version="1.0",oauth_signature="5sARLGoVkNAPhh5wq1Hl95crWIk"
+
+    #请求参数：
+    params:
+      in_coord_type: baidu
+      is_auto: 0
+      method: end
+      time: 1489998284
+      longitude: 116.316493
+      order_id: 6399493439545490047
+      version: 259
+      drive_time: 120
+      latitude: 39.989772
+      driver_add_price: 0
+      round: 1
+      distance: 0.4
+      batch: 1
+      provider: network
+      imei: 353222063475100
+      version: 259
+      x_auth_mode: client_auth
+      is_gzip: true
+      device_type: 1
+      os_name: samsung-SM-G900F
+      os_version: 6.0.1
+      city: 北京市
+      channel_source:
+
+
+-   id: 6
+    #测试方法名
+    testName: testBillConfirm
+    #服务uri，注意带/
+    uri:  /order/operateOrder
+    methodType: post
+    #如果需要设置header，就写，不需要可以去掉
+    headers:
+      Authorization: OAuth oauth_consumer_key="2afdd89f5c6dbdc34542ab04933a091004eba18e2",oauth_signature_method="PLAINTEXT",x_auth_mode="client_auth",oauth_version="1.0",oauth_signature="5sARLGoVkNAPhh5wq1Hl95crWIk"
+
+    #请求参数：
+    params:
+      in_coord_type: baidu
+      is_auto: 0
+      method: bill_confirm
+      time: 1489998284
+      longitude: 116.316493
+      order_id: 6399493439545490047
+      version: 259
+      drive_time: 120
+      latitude: 39.989772
+      driver_add_price: 0
+      round: 1
+      distance: 0.4
+      batch: 1
+      provider: network
+      imei: 353222063475100
+      version: 259
+      x_auth_mode: client_auth
+      is_gzip: true
+      device_type: 1
+      os_name: samsung-SM-G900F
+      os_version: 6.0.1
+      city: 北京市
+      channel_source:
+
+-   id: 7
+    #测试方法名
+    testName: testCotent
+    #服务uri，注意带/
+    uri:  /order/operateOrder
+    methodType: post
+    #如果需要设置header，就写，不需要可以去掉
+    headers:
+      Authorization: OAuth oauth_consumer_key="2afdd89f5c6dbdc34542ab04933a091004eba18e2",oauth_signature_method="PLAINTEXT",x_auth_mode="client_auth",oauth_version="1.0",oauth_signature="5sARLGoVkNAPhh5wq1Hl95crWIk"
+
+    #请求参数：
+    params:
+      in_black_list: 0
+      score: 5.0
+      service_order_id: 6399493439545490047
+      comment_user_tag_id: 22
+      imei: 353222063475100
+      version: 259
+      x_auth_mode: client_auth
+      is_gzip: true
+      device_type: 1
+      os_name: samsung-SM-G900F
+      os_version: 6.0.1
+      city: 北京市
+      channel_source:
+
+
+-   id: 8
+    #测试方法名
+    testName: testGetItemOrder
+    #服务uri，注意带/
+    uri:  /order/getItemOrder
+    methodType: post
+    #如果需要设置header，就写，不需要可以去掉
+    headers:
+      Authorization: OAuth oauth_consumer_key="2afdd89f5c6dbdc34542ab04933a091004eba18e2",oauth_signature_method="PLAINTEXT",x_auth_mode="client_auth",oauth_version="1.0",oauth_signature="5sARLGoVkNAPhh5wq1Hl95crWIk"
+
+    #请求参数：
+    params:
+      order_id: 6399509459773504239
+      out_coord_type: baidu
+      imei: 353222063475100
+      version: 259
+      x_auth_mode: client_auth
+      is_gzip: true
+      device_type: 1
+      os_name: samsung-SM-G900F
+      os_version: 6.0.1
+      city: 北京市
+      channel_source:
+
+
+-   id: 9
+    #测试方法名
+    testName: testGetDecisionStatus
+    #服务uri，注意带/
+    uri:  /order/GetDecisionStatus
+    methodType: post
+    #如果需要设置header，就写，不需要可以去掉
+    headers:
+      Authorization: OAuth oauth_consumer_key="2afdd89f5c6dbdc34542ab04933a091004eba18e2",oauth_signature_method="PLAINTEXT",x_auth_mode="client_auth",oauth_version="1.0",oauth_signature="5sARLGoVkNAPhh5wq1Hl95crWIk"
+
+    #请求参数：
+    params:
+      service_order_id: 6399509459773504239
+      imei: 353222063475100
+      version: 259
+      x_auth_mode: client_auth
+      is_gzip: true
+      device_type: 1
+      os_name: samsung-SM-G900F
+      os_version: 6.0.1
+      city: 北京市
+      channel_source:
+
+
+
+-   id: 10
+    #测试方法名
+    testName: testReassignChoice
+    #服务uri，注意带/
+    uri:  /V6/Driver/ReassignChoice
+    methodType: post
+    #如果需要设置header，就写，不需要可以去掉
+    headers:
+      Authorization: OAuth oauth_consumer_key="2afdd89f5c6dbdc34542ab04933a091004eba18e2",oauth_signature_method="PLAINTEXT",x_auth_mode="client_auth",oauth_version="1.0",oauth_signature="5sARLGoVkNAPhh5wq1Hl95crWIk"
+
+    #请求参数：
+    params:
+      order_id: 6399509459773504239
+      imei: 353222063475100
+      version: 259
+      x_auth_mode: client_auth
+      is_gzip: true
+      device_type: 1
+      os_name: samsung-SM-G900F
+      os_version: 6.0.1
+      city: 北京市
+      channel_source:
+
+
+-   id: 11
+    #测试方法名
+    testName: testGetDispatchRemind
+    #服务uri，注意带/
+    uri:  /V6/Driver/GetDispatchRemind
+    methodType: post
+    #如果需要设置header，就写，不需要可以去掉
+    headers:
+      Authorization: OAuth oauth_consumer_key="2afdd89f5c6dbdc34542ab04933a091004eba18e2",oauth_signature_method="PLAINTEXT",x_auth_mode="client_auth",oauth_version="1.0",oauth_signature="5sARLGoVkNAPhh5wq1Hl95crWIk"
+
+    #请求参数：
+    params: !!map {order_id: 6399509459773504239,imei: 353222063475100,version: 259,x_auth_mode: client_auth,is_gzip: true,device_type: 1,  os_name: samsung-SM-G900F, os_version: 6.0.1, city: 北京市, channel_source:  }
+
+
+-   id: 12
+    #测试方法名
+    testName: testGetOrderList
+    #服务uri，注意带/
+    uri:  /v4/order/getOrderList
+    methodType: post
+    #如果需要设置header，就写，不需要可以去掉
+    headers:
+      Authorization: OAuth oauth_consumer_key="2afdd89f5c6dbdc34542ab04933a091004eba18e2",oauth_signature_method="PLAINTEXT",x_auth_mode="client_auth",oauth_version="1.0",oauth_signature="5sARLGoVkNAPhh5wq1Hl95crWIk"
+
+    #请求参数：
+    params:
+      page_num: 1
+      out_coord_type: baidu
+      version: 259
+      imei: 353222063475100
+      x_auth_mode: client_auth
+      is_gzip: true
+      device_type: 1
+      os_name: samsung-SM-G900F
+      os_version: 6.0.1
+      city: 北京市
+      channel_source:
+
+-   id: 13
+    #测试方法名  获取订单坐标点
+    testName:  testGetOrderTrack
+    uri: /Order/GetOrderTrack
+    methodType: get
+    headers:
+      Authorization: OAuth oauth_consumer_key="2afdd89f5c6dbdc34542ab04933a091004eba18e2",oauth_signature_method="PLAINTEXT",x_auth_mode="client_auth",oauth_version="1.0",oauth_signature="5sARLGoVkNAPhh5wq1Hl95crWIk"
+      Content-Type: application/x-www-form-urlencoded
+    params:
+      order_id: 6416576573177014457
+      out_coord_type: baidu
+
+-   id: 14
+    #测试方法名  司机现在出发
+    testName:  testSetDriverDepart
+    uri: /Order/SetDriverDepart
+    methodType: post
+    headers:
+      Authorization: OAuth oauth_consumer_key="2afdd89f5c6dbdc34542ab04933a091004eba18e2",oauth_signature_method="PLAINTEXT",x_auth_mode="client_auth",oauth_version="1.0",oauth_signature="5sARLGoVkNAPhh5wq1Hl95crWIk"
+      Content-Type: application/x-www-form-urlencoded
+    params:
+      order_id: 6408744558580445138
+      
+-   id: 15
+    #测试方法名  获取预估费用
+    testName:  testGetEstimatePrice
+    uri: /Order/GetEstimatePrice
+    methodType: get
+    headers:
+      Authorization: OAuth oauth_consumer_key="2afdd89f5c6dbdc34542ab04933a091004eba18e2",oauth_signature_method="PLAINTEXT",x_auth_mode="client_auth",oauth_version="1.0",oauth_signature="5sARLGoVkNAPhh5wq1Hl95crWIk"
+      Content-Type: application/x-www-form-urlencoded
+    params:
+      order_id: 6416576573177014457
+      
+-   id: 16
+    #测试方法名  获取预估公里
+    testName:  testEstimatedDistance
+    uri: /V6/Driver/EstimatedDistance
+    methodType: get
+    headers:
+      Authorization: OAuth oauth_consumer_key="2afdd89f5c6dbdc34542ab04933a091004eba18e2",oauth_signature_method="PLAINTEXT",x_auth_mode="client_auth",oauth_version="1.0",oauth_signature="5sARLGoVkNAPhh5wq1Hl95crWIk"
+      Content-Type: application/x-www-form-urlencoded
+    params:
+      connect_type: 1
+      service_order_id: 6416576573177014457
+      origin_lat: 39.989643
+      origin_lng: 116.481028
+      destination_lat: 40.004717
+      destination_lng: 114.465302
+      in_coord_type: mars
+
+-   id: 17
+    #测试方法名  账单重新算费
+    testName:  testCalculateOrder
+    uri: /V2/Order/CalculateOrder
+    methodType: post
+    headers:
+      Authorization: OAuth oauth_consumer_key="2afdd89f5c6dbdc34542ab04933a091004eba18e2",oauth_signature_method="PLAINTEXT",x_auth_mode="client_auth",oauth_version="1.0",oauth_signature="5sARLGoVkNAPhh5wq1Hl95crWIk"
+      Content-Type: application/x-www-form-urlencoded
+    params:
+      order_id: 6416576573177014457
+      system_distance: 0
+      input_distance: 0
+      start_time: 1493975731
+      end_time: 1493979475
+      highway_amount: 5
+      parking_amount: 2
+
+-   id: 18
+    #测试方法名  改派文案
+    testName:  testGetDispatchContent
+    uri: /V4/Driver/GetDispatchContent
+    methodType: post
+    headers:
+      Authorization: OAuth oauth_consumer_key="2afdd89f5c6dbdc34542ab04933a091004eba18e2",oauth_signature_method="PLAINTEXT",x_auth_mode="client_auth",oauth_version="1.0",oauth_signature="5sARLGoVkNAPhh5wq1Hl95crWIk"
+      Content-Type: application/x-www-form-urlencoded
+    params:
+
+-   id: 19
+    #测试方法名  改派接口
+    testName:  testChangeDispatch
+    uri: /V4/Driver/ChangeDispatch
+    methodType: post
+    headers:
+      Authorization: OAuth oauth_consumer_key="2afdd89f5c6dbdc34542ab04933a091004eba18e2",oauth_signature_method="PLAINTEXT",x_auth_mode="client_auth",oauth_version="1.0",oauth_signature="5sARLGoVkNAPhh5wq1Hl95crWIk"
+      Content-Type: application/x-www-form-urlencoded
+    params:
+      order_id: 6416576573177014457
+
+-   id: 20
+    #测试方法名  司机拒绝接单理由
+    testName:  testSetRefuseReason
+    uri: /V5/Driver/SetRefuseReason
+    methodType: post
+    headers:
+      Authorization: OAuth oauth_consumer_key="2afdd89f5c6dbdc34542ab04933a091004eba18e2",oauth_signature_method="PLAINTEXT",x_auth_mode="client_auth",oauth_version="1.0",oauth_signature="5sARLGoVkNAPhh5wq1Hl95crWIk"
+      Content-Type: application/x-www-form-urlencoded
+    params:
+      service_order_id: 6416576573177014457
+      refuse_type: 1
+
+-   id: 21
+    #测试方法名  联系不上乘客
+    testName:  testContactPassenger
+    uri: /V6/Driver/ContactPassenger
+    methodType: post
+    headers:
+      Authorization: OAuth oauth_consumer_key="2afdd89f5c6dbdc34542ab04933a091004eba18e2",oauth_signature_method="PLAINTEXT",x_auth_mode="client_auth",oauth_version="1.0",oauth_signature="5sARLGoVkNAPhh5wq1Hl95crWIk"
+      Content-Type: application/x-www-form-urlencoded
+    params:
+      order_id: 6416576573177014457
+      distance_diff: 100
+
+-   id: 22
+    #测试方法名  系统自动化确认改派
+    testName:  testReassignAccept
+    uri: /V6/Driver/ReassignAccept
+    methodType: post
+    headers:
+      Authorization: OAuth oauth_consumer_key="2afdd89f5c6dbdc34542ab04933a091004eba18e2",oauth_signature_method="PLAINTEXT",x_auth_mode="client_auth",oauth_version="1.0",oauth_signature="5sARLGoVkNAPhh5wq1Hl95crWIk"
+      Content-Type: application/x-www-form-urlencoded
+    params:
+      bidding_id: 6419143118755060887
+      commission: 0.2
+      service_order_id: 6419141948552985256
+      deduct_marks: 0
+      deduct_fine: 0
+      price_spread: 0
+
+-   id: 23
+    #测试方法名  系统自动化轮询查看状态
+    testName:  testReassignRoll
+    uri: /V6/Driver/ReassignRoll
+    methodType: post
+    headers:
+      Authorization: OAuth oauth_consumer_key="2afdd89f5c6dbdc34542ab04933a091004eba18e2",oauth_signature_method="PLAINTEXT",x_auth_mode="client_auth",oauth_version="1.0",oauth_signature="5sARLGoVkNAPhh5wq1Hl95crWIk"
+      Content-Type: application/x-www-form-urlencoded
+    params:
+      reassign_fee: 4
+      bidding_id: 6419143118755060887
+      service_order_id: 6419141948552985256
+      
+-   id: 24
+    #测试方法名  订单热力图
+    testName:  testOrderHeatingPower
+    uri: /V6/Driver/OrderHeatingPower
+    methodType: get
+    headers:
+      Authorization: OAuth oauth_consumer_key="2afdd89f5c6dbdc34542ab04933a091004eba18e2",oauth_signature_method="PLAINTEXT",x_auth_mode="client_auth",oauth_version="1.0",oauth_signature="5sARLGoVkNAPhh5wq1Hl95crWIk"
+      Content-Type: application/x-www-form-urlencoded
+    params:
+      city: 北京市
+      
+-   id: 25
+    #测试方法名  出发前一小时提示
+    testName:  testRemindFeedback
+    uri: /Driver/RemindFeedback
+    methodType: post
+    headers:
+      Authorization: OAuth oauth_consumer_key="2afdd89f5c6dbdc34542ab04933a091004eba18e2",oauth_signature_method="PLAINTEXT",x_auth_mode="client_auth",oauth_version="1.0",oauth_signature="5sARLGoVkNAPhh5wq1Hl95crWIk"
+      Content-Type: application/x-www-form-urlencoded
+    params:
+      result: 10
+      remind_id: 6419143118755060887
+      order_id: 6419141948552985256
+
+-   id: 26
+    #测试方法名  根据司机ID和乘客ID获取已完成服务的订单
+    testName:  testGetServiceOrderList
+    uri: /Order/GetServiceOrderList
+    methodType: get
+    headers:
+      Authorization: OAuth oauth_consumer_key="2afdd89f5c6dbdc34542ab04933a091004eba18e2",oauth_signature_method="PLAINTEXT",x_auth_mode="client_auth",oauth_version="1.0",oauth_signature="5sARLGoVkNAPhh5wq1Hl95crWIk"
+      Content-Type: application/x-www-form-urlencoded
+    params:
+      user_id: 50058060
+      
+-   id: 27
+    #测试方法名  司机创建与客服聊天的Session ID的接口
+    testName:  testCreateSessionWithCRM
+    uri: /Order/CreateSessionWithCRM
+    methodType: get
+    headers:
+      Authorization: OAuth oauth_consumer_key="2afdd89f5c6dbdc34542ab04933a091004eba18e2",oauth_signature_method="PLAINTEXT",x_auth_mode="client_auth",oauth_version="1.0",oauth_signature="5sARLGoVkNAPhh5wq1Hl95crWIk"
+      Content-Type: application/x-www-form-urlencoded
+    params:
+      service_order_id: 6421400762048266003
+      driver_id: 50062329
+      
+-   id: 28
+    #测试方法名  司机取得SessionId接口
+    testName:  testGetSession
+    uri: /Order/GetSession
+    methodType: get
+    headers:
+      Authorization: OAuth oauth_consumer_key="2afdd89f5c6dbdc34542ab04933a091004eba18e2",oauth_signature_method="PLAINTEXT",x_auth_mode="client_auth",oauth_version="1.0",oauth_signature="5sARLGoVkNAPhh5wq1Hl95crWIk"
+      Content-Type: application/x-www-form-urlencoded
+    params:
+      service_order_id: 6421400762048266003
+      is_crm: 0                    

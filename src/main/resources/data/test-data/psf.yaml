@@ -1,0 +1,14 @@
+#模块名
+packageName: login
+serviceType: order
+#测试接口任务列表
+taskList:
+- id: 1
+  #测试方法名
+  testName: testLogin
+  #服务uri，注意带/
+  uri: /login/one
+  #请求参数
+  params:
+    IMEI: 我试试
+    userId: 234252342345

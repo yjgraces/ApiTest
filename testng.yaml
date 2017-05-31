@@ -1,0 +1,12 @@
+name: auto-test
+threadCount: 1
+configFailurePolicy: skip
+listeners:
+  - org.uncommons.reportng.HTMLReporter
+  - org.uncommons.reportng.JUnitXMLReporter
+tests:
+  - name: autotest
+    verbose: 5
+    classes:
+      - com.yd.test.MemberStat
+

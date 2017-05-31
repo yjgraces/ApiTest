@@ -1,0 +1,26 @@
+#模块名
+packageName: SpecialActivities
+
+#测试接口任务列表
+taskList: 
+-   id: 1
+    #测试方法名  获取优惠券提示内容
+    testName:  testGetCouponContent
+    uri: /V4/Driver/GetCouponContent
+    methodType: get
+    headers:
+      Authorization: OAuth oauth_consumer_key="2afdd89f5c6dbdc34542ab04933a091004eba18e2",oauth_signature_method="PLAINTEXT",x_auth_mode="client_auth",oauth_version="1.0",oauth_signature="5sARLGoVkNAPhh5wq1Hl95crWIk"
+      Content-Type: application/x-www-form-urlencoded
+    params:
+      order_id: 6419141948552985256
+
+-   id: 2
+    #测试方法名  司机拉用户送优惠券的接口
+    testName:  testSendCoupon
+    uri: /V4/Driver/SendCoupon
+    methodType: post
+    headers:
+      Authorization: OAuth oauth_consumer_key="2afdd89f5c6dbdc34542ab04933a091004eba18e2",oauth_signature_method="PLAINTEXT",x_auth_mode="client_auth",oauth_version="1.0",oauth_signature="5sARLGoVkNAPhh5wq1Hl95crWIk"
+      Content-Type: application/x-www-form-urlencoded
+    params:
+      order_id: 6419141948552985256     

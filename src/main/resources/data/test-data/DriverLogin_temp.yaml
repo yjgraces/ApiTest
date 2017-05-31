@@ -1,0 +1,67 @@
+#模块名
+packageName: DriverLogin
+
+#测试接口任务列表
+taskList:
+-   id: 11
+    #测试方法名  登录接口Login，获取token
+    testName:  testLoginAndUnbind
+    uri: /V6/CarMaster/Login
+    methodType: post
+    headers:
+      Authorization: OAuth oauth_consumer_key="2afdd89f5c6dbdc34542ab04933a091004eba18e2",oauth_signature_method="PLAINTEXT",x_auth_mode="client_auth",oauth_version="1.0",oauth_signature="5sARLGoVkNAPhh5wq1Hl95crWIk"
+      Content-Type: application/x-www-form-urlencoded
+    params:
+      cellphone: 16868680000
+      code_type: 1
+      area_code: 86
+      imei: 353222063480000
+      version: 259
+      x_auth_mode: client_auth
+      is_gzip: 1
+      device_type: 1
+      os_name: samsung-SM-G900F
+      os_version: 6.0.1
+      city: 北京市 
+      x_auth_username: 16868680000
+      client_secret: 9a9c7d97429b8737bf604d0a56aee505
+      client_id: car_master
+      channel_source: 
+
+-   id: 22
+    #测试方法名  新版本获取司机端验证码
+    testName:  testGetAuthCode
+    uri: /V6/CarMaster/CreateAuthCode
+    methodType: post
+    headers:
+      Authorization: OAuth oauth_consumer_key="2afdd89f5c6dbdc34542ab04933a091004eba18e2",oauth_signature_method="PLAINTEXT",x_auth_mode="client_auth",oauth_version="1.0",oauth_signature="5sARLGoVkNAPhh5wq1Hl95crWIk"
+      Content-Type: application/x-www-form-urlencoded
+    params:
+      cellphone: 16868680000
+      code_type: 1
+      area_code: 86
+      imei: 353222063480000
+      version: 259
+      x_auth_mode: client_auth
+      is_gzip: 1
+      device_type: 1
+      os_name: samsung-SM-G900F
+      os_version: 6.0.1
+      city: 北京市 
+      channel_source:      
+ 
+-   id: 33
+    #测试方法名  司机设备解绑
+    testName:  testUnbind
+    uri: /Driver/Unbind
+    methodType: post
+    headers:
+      Authorization: OAuth oauth_consumer_key="2afdd89f5c6dbdc34542ab04933a091004eba18e2",oauth_signature_method="PLAINTEXT",x_auth_mode="client_auth",oauth_version="1.0",oauth_signature="5sARLGoVkNAPhh5wq1Hl95crWIk"
+      Content-Type: application/x-www-form-urlencoded
+    params:
+      imei: 353222063480000
+      version: 259
+      x_auth_mode: client_auth
+      device_type: 1
+     
+     
